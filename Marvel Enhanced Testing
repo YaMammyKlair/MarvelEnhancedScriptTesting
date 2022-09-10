@@ -1,0 +1,276 @@
+local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
+local Window = Library.CreateLib("Marvel Enchanced Script", "GrapeTheme")
+local Tab = Window:NewTab("Main Menu")
+local Section = Tab:NewSection("This is a Tester Script.")
+local Section = Tab:NewSection("If this script get's patched, a new one will be made")
+local Section = Tab:NewSection("Credits: Klair and Issac")
+local Tab = Window:NewTab("Abilites")
+local Section = Tab:NewSection("Useful")
+Section:NewButton("Anti Ragdoll", "ButtonInfo", function()
+    print("Clicked")
+    game:GetService("ReplicatedStorage").network.ToggleRagdoll:destroy()
+game:GetService("ReplicatedStorage").network.Ragdoll:destory()
+end)
+Section:NewButton("Anti Camera Shake", "ButtonInfo", function()
+    print("Clicked")
+    game:GetService("ReplicatedStorage").network.CameraShake:destroy()
+end)
+local Section = Tab:NewSection("Rogue")
+Section:NewButton("Rogue Spawner", "You can Be any Character With They powers", function()
+    print("Clicked")
+    local args = {
+    [1] = "Rogue",
+    [2] = "90's"
+}
+
+game:GetService("ReplicatedStorage").network.CharacterRequest:InvokeServer(unpack(args))
+
+
+end)
+Section:NewButton("Rogue Flight", "Flight Activate", function()
+    print("Clicked")
+    local args = {
+    [1] = "RogueFlight",
+    [2] = game:GetService("Players").LocalPlayer.Character.Stats.Abilities.Transport,
+    [3] = "Activated"
+}
+
+game:GetService("ReplicatedStorage").network.AbilityTrigger:InvokeServer(unpack(args))
+end)
+
+Section:NewButton("Ground Smash", "Smashes Ground (Spammable)", function()
+    print("Clicked")
+   local args = {
+    [1] = "GroundSmash",
+    [2] = game:GetService("Players").LocalPlayer.Character.Stats.Abilities.BasicAttack,
+    [3] = "Activated",
+    [4] = CFrame.new(Vector3.new(8.178955078125, 620.9886474609375, -94.16664123535156), Vector3.new(-0.6071942448616028, 5.4446619657255724e-08, -0.7945533990859985)),
+    [5] = game:GetService("Players").LocalPlayer.Character.RightHand
+}
+
+game:GetService("ReplicatedStorage").network.AbilityTrigger:InvokeServer(unpack(args))
+
+end)
+
+Section:NewButton("Rogue Flight Deactivate", "Deactivate Flight", function()
+    print("Clicked")
+    local args = {
+    [1] = "RogueFlight",
+    [2] = game:GetService("Players").LocalPlayer.Character.Stats.Abilities.Transport,
+    [3] = "Deactivated"
+}
+
+game:GetService("ReplicatedStorage").network.AbilityTrigger:InvokeServer(unpack(args))
+end)
+local Section = Tab:NewSection("Wanda")
+Section:NewButton("AOU Wanda Spawner", "Spawn as Age of Ultron Wanda", function()
+    print("Clicked")
+    local args = {
+    [1] = "Scarlet Witch",
+    [2] = "Age of Ultron"
+}
+
+game:GetService("ReplicatedStorage").network.CharacterRequest:InvokeServer(unpack(args))
+end)
+Section:NewButton("AOU Wanda Scream Spammer", "Wanda's Repulse (Spammable)", function()
+    print("Clicked")
+    local args = {
+    [1] = "AgeofUltronChaosBlast",
+    [2] = game:GetService("Players").LocalPlayer.Character.Stats.Abilities.Ultimate,
+    [3] = "Activated"
+}
+
+game:GetService("ReplicatedStorage").network.AbilityTrigger:InvokeServer(unpack(args))
+end)
+Section:NewButton("Infinity War Wanda Flight", "Flight Activation", function()
+    print("Clicked")
+    local args = {
+    [1] = "InfinityWarChaosFlight",
+    [2] = game:GetService("Players").LocalPlayer.Character.Stats.Abilities.Transport,
+    [3] = "Activated"
+}
+
+game:GetService("ReplicatedStorage").network.AbilityTrigger:InvokeServer(unpack(args))
+end)
+Section:NewButton("Flight Deactivate", "Flight Deactivation", function()
+    print("Clicked")
+    local args = {
+    [1] = "InfinityWarChaosFlight",
+    [2] = game:GetService("Players").LocalPlayer.Character.Stats.Abilities.Transport,
+    [3] = "Deactivated"
+}
+
+game:GetService("ReplicatedStorage").network.AbilityTrigger:InvokeServer(unpack(args))
+end)
+local Section = Tab:NewSection("Invisible Woman")
+Section:NewButton("Invisible Woman Spawner", "ButtonInfo", function()
+    print("Clicked")
+    local args = {
+    [1] = "Invisible Woman",
+    [2] = "Fantastic 4"
+}
+
+game:GetService("ReplicatedStorage").network.CharacterRequest:InvokeServer(unpack(args))
+end)
+Section:NewButton("Uncloak", "Turning Off Invisibility", function()
+    print("Clicked")
+    local args = {
+    [1] = "Invisibility",
+    [2] = game:GetService("Players").LocalPlayer.Character.Stats.Abilities.Ability1,
+    [3] = "Deactivated"
+}
+
+game:GetService("ReplicatedStorage").network.AbilityTrigger:InvokeServer(unpack(args))
+
+end)
+Section:NewButton("Cloak", "Go invisible", function()
+    print("Clicked")
+    local args = {
+    [1] = "Invisibility",
+    [2] = game:GetService("Players").LocalPlayer.Character.Stats.Abilities.Ability1,
+    [3] = "Activated"
+}
+
+game:GetService("ReplicatedStorage").network.AbilityTrigger:InvokeServer(unpack(args))
+
+end)
+Section:NewButton("Invisible Woman Shield", "Shield Activation (Spammable)", function()
+    print("Clicked")
+    local args = {
+    [1] = "BubbleShield",
+    [2] = game:GetService("Players").LocalPlayer.Character.Stats.Abilities.Ability3,
+    [3] = "Activated"
+}
+
+game:GetService("ReplicatedStorage").network.AbilityTrigger:InvokeServer(unpack(args))
+
+end)
+Section:NewButton("Undo Shield", "Sheild Deactivation", function()
+    print("Clicked")
+    local args = {
+    [1] = "BubbleShield",
+    [2] = game:GetService("Players").LocalPlayer.Character.Stats.Abilities.Ability3,
+    [3] = "Deactivated"
+}
+
+game:GetService("ReplicatedStorage").network.AbilityTrigger:InvokeServer(unpack(args))
+end)
+Section:NewButton("Flight", "Activate's Flight", function()
+    print("Clicked")
+    local args = {
+    [1] = "ShieldFlight",
+    [2] = game:GetService("Players").LocalPlayer.Character.Stats.Abilities.Transport,
+    [3] = "Activated"
+}
+
+game:GetService("ReplicatedStorage").network.AbilityTrigger:InvokeServer(unpack(args))
+
+end)
+Section:NewButton("Flight Deactivation", "Deactivates Flight", function()
+    print("Clicked")
+    local args = {
+    [1] = "ShieldFlight",
+    [2] = game:GetService("Players").LocalPlayer.Character.Stats.Abilities.Transport,
+    [3] = "Deactivated"
+}
+
+game:GetService("ReplicatedStorage").network.AbilityTrigger:InvokeServer(unpack(args))
+
+end)
+
+local Section = Tab:NewSection("Jean Grey")
+Section:NewButton("Jean Grey Spawner", "Spawns you as Jean Grey", function()
+    print("Clicked")
+    local args = {
+    [1] = "Jean Grey",
+    [2] = "Apocalypse"
+}
+
+game:GetService("ReplicatedStorage").network.CharacterRequest:InvokeServer(unpack(args))
+end)
+
+Section:NewButton("Telekinetic Shield", "Summons Shield (Spammable)", function()
+    print("Clicked")
+    local args = {
+    [1] = "TKShield",
+    [2] = game:GetService("Players").LocalPlayer.Character.Stats.Abilities.Ability3,
+    [3] = "Activated"
+}
+
+game:GetService("ReplicatedStorage").network.AbilityTrigger:InvokeServer(unpack(args))
+end)
+
+
+Section:NewTextBox("Pain Inflict User", "Pain Infliction", function(txt)
+        print(Success)
+            
+        local username = string.lower(txt)
+        local foundChild = false
+        local Child
+        for i,v in pairs(game.Players:GetChildren()) do
+            if string.lower(v.Name) == username then
+            foundChild = true
+            child = v
+        end
+    end
+    
+    
+        
+    if foundChild == true then
+        
+        local args = {
+    [1] = "PainInfliction",
+    [2] = game:GetService("Players").LocalPlayer.Character.Stats.Abilities.BasicAttack,
+    [3] = "Activated",
+    [4] = child.Character
+}
+
+game:GetService("ReplicatedStorage").network.AbilityTrigger:InvokeServer(unpack(args))
+
+        end
+    
+
+
+end)
+
+local Section = Tab:NewSection("IronMan")
+Section:NewButton("IronMan Spawner", "Spawns you as IronMan", function()
+    print("Clicked")
+    local args = {
+    [1] = "Ironman",
+    [2] = "Age of Ultron"
+}
+
+game:GetService("ReplicatedStorage").network.CharacterRequest:InvokeServer(unpack(args))
+end)
+Section:NewButton("IronMan Flight", "Flight Activation", function()
+    print("Clicked")
+    local args = {
+    [1] = "IronmanFlight",
+    [2] = game:GetService("Players").LocalPlayer.Character.Stats.Abilities.Transport,
+    [3] = "Activated"
+}
+
+game:GetService("ReplicatedStorage").network.AbilityTrigger:InvokeServer(unpack(args))
+
+end)
+Section:NewButton("Flight Deactivate", "Flight Deactivation", function()
+    print("Clicked")
+    local args = {
+    [1] = "IronmanFlight",
+    [2] = game:GetService("Players").LocalPlayer.Character.Stats.Abilities.Transport,
+    [3] = "Deactivated"
+}
+
+game:GetService("ReplicatedStorage").network.AbilityTrigger:InvokeServer(unpack(args))
+end)
+local Section = Tab:NewSection("Cyclops")
+Section:NewButton("Cyclops Spawner", "Spawns you as Cyclops", function()
+    print("Clicked")
+    local args = {
+    [1] = "Cyclops",
+    [2] = "Apocalypse"
+}
+
+game:GetService("ReplicatedStorage").network.CharacterRequest:InvokeServer(unpack(args))
+end)

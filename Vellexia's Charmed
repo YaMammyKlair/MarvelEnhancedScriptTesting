@@ -173,3 +173,14 @@ game:GetService("ReplicatedStorage").Witches.GoodWitches.Paige.PowerEvents.Paige
 
 
 end)
+
+Section:NewKeybind("Patience Weave Spawn", "Makes Patience Hair Longer", function()
+	 print("Clicked")
+        local args = {
+         [1] = "Weave"
+}
+
+game:GetService("ReplicatedStorage").Witches.GoodWitches.Patience.PowerEvents.SpellEvents:FireServer(unpack(args))
+
+
+end)

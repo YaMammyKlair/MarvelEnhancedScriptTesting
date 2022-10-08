@@ -174,13 +174,14 @@ game:GetService("ReplicatedStorage").Witches.GoodWitches.Paige.PowerEvents.Paige
 
 end)
 
-Section:NewButton("Patience Weave", "Makes Patience Hair Longer", function()
-	 print("Clicked")
-        local args = {
-         [1] = "Weave"
-}
+Section:NewButton("Patience Weave", "Makes Patience Hair Grow", function()
+    print("Clicked")
+    local args = {
+    [1] = "Weave"
+} 
 
 game:GetService("ReplicatedStorage").Witches.GoodWitches.Patience.PowerEvents.SpellEvents:FireServer(unpack(args))
+
 
 
 end)

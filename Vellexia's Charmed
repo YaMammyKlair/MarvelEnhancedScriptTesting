@@ -232,3 +232,38 @@ game:GetService("ReplicatedStorage").Witches.GoodWitches.Vivian.PowerEvents.Vivi
 
 end)
 
+Section:NewKeybind("Neena Force Field", "Flings enemies nearby", Enum.KeyCode.X, function()
+	print("You just clicked the bind")  
+     local args = {
+    [1] = "field",
+    [2] = Vector3.new(-421.18646240234375, 7374.3662109375, 969.6729125976562)
+}
+
+game:GetService("ReplicatedStorage").Witches.EvilWitches.Neena.PowerEvents.NeenaEvents:FireServer(unpack(args))
+
+
+
+
+
+
+
+end)
+
+Section:NewKeybind("Neena Force Field Deactivate", "Turns Force Field Off", Enum.KeyCode.Z, function()
+	print("You just clicked the bind")       
+    local args = {
+    [1] = "stop",
+    [2] = Vector3.new(-421.2396545410156, 7374.24267578125, 969.5183715820312)
+}
+
+game:GetService("ReplicatedStorage").Witches.EvilWitches.Neena.PowerEvents.NeenaEvents:FireServer(unpack(args))
+
+
+
+
+
+
+
+
+end)
+

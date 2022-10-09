@@ -90,6 +90,19 @@ game:GetService("ReplicatedStorage").Witches.GoodWitches.Prue.PowerEvents.PrueEv
 
 end)
 
+Section:NewKeybind("Earthquake", "Makes Earthqeake", Enum.KeyCode.R, function()
+	print("You just clicked the bind")
+    local args = {
+    [1] = "quake",
+    [2] = Vector3.new(540.8862915039062, 2.17071533203125, -487.44989013671875)
+}
+
+game:GetService("ReplicatedStorage").Witches.EvilWitches.Enchantress.PowerEvents.EnchantressEvents:FireServer(unpack(args))
+
+
+
+end)
+
 Section:NewButton("Astral", "Puts you in Astral form", function()
     print("Clicked")
     local args = {

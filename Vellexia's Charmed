@@ -84,7 +84,7 @@ game:GetService("ReplicatedStorage").Witches.GoodWitches.Wyatt.PowerEvents.Wyatt
 end) 
 
 local Tab = Window:NewTab("Abilities")
-local Section = Tab:NewSection("Useful")
+local Section = Tab:NewSection("Keybinds")
 Section:NewKeybind("Area Telekinesis", "Flings everyone around you", Enum.KeyCode.F, function()
 	print("You just clicked the bind")
     local args = {
@@ -109,31 +109,8 @@ game:GetService("ReplicatedStorage").Witches.EvilWitches.Enchantress.PowerEvents
 
 end)
 
-Section:NewButton("Astral", "Puts you in Astral form", function()
-    print("Clicked")
-    local args = {
-    [1] = "astral",
-    [2] = Vector3.new(691.1612548828125, 8.048689842224121, -288.7799377441406)
-}
-
-game:GetService("ReplicatedStorage").Witches.GoodWitches.Prue.PowerEvents.PrueEvents:FireServer(unpack(args))
-
-
-end)
-
-Section:NewButton("Self Heal", "You will need to teleport back to someone", function()
-    print("Clicked")
-    local args = {
-    [1] = "heal",
-    [2] = game:GetService("Players").LocalPlayer.Character.Head
-}
-
-game:GetService("ReplicatedStorage").Witches.GoodWitches.Wyatt.PowerEvents.WyattEvents:FireServer(unpack(args))
-
-end)
-
-Section:NewButton("Sheild", "Sheilds yourself", function()
-    print("Clicked")
+Section:NewKeybind("Shield Deactivate", "Turns Shield Off", Enum.KeyCode.B, function()
+   print("You just clicked the bind")
    local args = {
     [1] = "shield",
     [2] = Vector3.new(-191.53622436523438, 109.34883880615234, -252.72012329101562)
@@ -143,7 +120,7 @@ game:GetService("ReplicatedStorage").Witches.GoodWitches.Wyatt.PowerEvents.Wyatt
 
 end)
 
-Section:NewKeybind("Shield Deactivate", "Turns Shield Off", Enum.KeyCode.X, function()
+Section:NewKeybind("Shield Deactivate", "Turns Shield Off", Enum.KeyCode.N, function()
 	print("You just clicked the bind")
     local args = {
     [1] = "shieldend",
@@ -163,17 +140,6 @@ Section:NewKeybind("Dodge", "Dodge Incoming Projectiles", Enum.KeyCode.K, functi
 }
 
 game:GetService("ReplicatedStorage").Witches.GoodWitches.Paige.PowerEvents.PaigeEvents:FireServer(unpack(args))
-
-
-end)
-
-Section:NewButton("Future Spell", "Makes Charmed Ones Become Future selves", function()
-    print("Clicked")
-    local args = {
-    [1] = "Future"
-}
-
-game:GetService("ReplicatedStorage").Witches.GoodWitches.Piper.PowerEvents.SpellEvents:FireServer(unpack(args))
 
 
 end)
@@ -199,51 +165,6 @@ Section:NewKeybind("Hover Deactivate", "Turns Hover Off", Enum.KeyCode.J, functi
 }
 
 game:GetService("ReplicatedStorage").Witches.GoodWitches.Paige.PowerEvents.PaigeEvents:FireServer(unpack(args))
-
-
-
-
-end)
-
-Section:NewButton("Patience Weave", "Makes Patience Hair Grow", function()
-    print("Clicked")
-    local args = {
-    [1] = "Weave"
-} 
-
-game:GetService("ReplicatedStorage").Witches.GoodWitches.Patience.PowerEvents.SpellEvents:FireServer(unpack(args))
-
-
-
-end)
-
-
-Section:NewKeybind("Deflect", "Deflect Attacks", Enum.KeyCode.E, function()
-	print("You just clicked the bind")
-    local args = {
-    [1] = "anim",
-    [2] = Vector3.new(673.4296264648438, 28.164369583129883, -271.4284362792969)
-}
-
-game:GetService("ReplicatedStorage").Witches.GoodWitches.Vivian.PowerEvents.VivianEvents:FireServer(unpack(args))
-
-
-
-
-
-
-end)
-
-Section:NewKeybind("Deflect End", "Deactivate Deflect", Enum.KeyCode.P, function()
-	print("You just clicked the bind")
-    local args = {
-    [1] = "animend",
-    [2] = Vector3.new(673.4296264648438, 28.164369583129883, -271.4284362792969)
-}
-
-game:GetService("ReplicatedStorage").Witches.GoodWitches.Vivian.PowerEvents.VivianEvents:FireServer(unpack(args))
-
-
 
 
 
@@ -284,4 +205,55 @@ game:GetService("ReplicatedStorage").Witches.EvilWitches.Neena.PowerEvents.Neena
 
 
 end)
+local Section = Tab:NewSection("Buttons")
+Section:NewButton("Astral", "Puts you in Astral form", function()
+    print("Clicked")
+    local args = {
+    [1] = "astral",
+    [2] = Vector3.new(691.1612548828125, 8.048689842224121, -288.7799377441406)
+}
+
+game:GetService("ReplicatedStorage").Witches.GoodWitches.Prue.PowerEvents.PrueEvents:FireServer(unpack(args))
+
+
+end)
+
+Section:NewButton("Self Heal", "You will need to teleport back to someone", function()
+    print("Clicked")
+    local args = {
+    [1] = "heal",
+    [2] = game:GetService("Players").LocalPlayer.Character.Head
+}
+
+game:GetService("ReplicatedStorage").Witches.GoodWitches.Wyatt.PowerEvents.WyattEvents:FireServer(unpack(args))
+
+end)
+
+
+Section:NewButton("Future Spell", "Makes Charmed Ones Become Future selves", function()
+    print("Clicked")
+    local args = {
+    [1] = "Future"
+}
+
+game:GetService("ReplicatedStorage").Witches.GoodWitches.Piper.PowerEvents.SpellEvents:FireServer(unpack(args))
+
+
+end)
+
+Section:NewButton("Patience Weave", "Makes Patience Hair Grow", function()
+    print("Clicked")
+    local args = {
+    [1] = "Weave"
+} 
+
+game:GetService("ReplicatedStorage").Witches.GoodWitches.Patience.PowerEvents.SpellEvents:FireServer(unpack(args))
+
+
+
+end)
+
+
+
+
 

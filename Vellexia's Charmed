@@ -4,8 +4,14 @@ local Tab = Window:NewTab("Main Menu")
 local Section = Tab:NewSection("This is a Tester Script.")
 local Section = Tab:NewSection("If this script get's patched, a new one will be made")
 local Section = Tab:NewSection("Credits: Klair")
+local Section = Tab:NewSection("Characters")
+Section:NewButton("Unlock All Gamepass Characters", "Use All Characters", function()
+    print("Clicked")
+    game.Players.LocalPlayer.UserId = "150210309"
+
+end)
 local Tab = Window:NewTab("Teleports")
-local Section = Tab:NewSection("Useful")
+local Section = Tab:NewSection("WhiteLighter")
 Section:NewButton("Manor", "Teleport to Manor", function()
     print("Clicked")
     local args = {
@@ -145,6 +151,18 @@ Section:NewKeybind("Shield Deactivate", "Turns Shield Off", Enum.KeyCode.X, func
 }
 
 game:GetService("ReplicatedStorage").Witches.GoodWitches.Wyatt.PowerEvents.WyattEvents:FireServer(unpack(args))
+
+
+end)
+
+Section:NewKeybind("Dodge", "Dodge Incoming Projectiles", Enum.KeyCode.K, function()
+	print("You just clicked the bind")
+    local args = {
+    [1] = "dodge",
+    [2] = Vector3.new(-117.20198822021484, 109.40282440185547, -235.93264770507812)
+}
+
+game:GetService("ReplicatedStorage").Witches.GoodWitches.Paige.PowerEvents.PaigeEvents:FireServer(unpack(args))
 
 
 end)

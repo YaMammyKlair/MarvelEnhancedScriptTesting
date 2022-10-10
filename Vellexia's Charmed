@@ -1,12 +1,5 @@
 local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
-local Window = Library.CreateLib("Vellexia's Charmed Script", colors)
-local colors = {
-    SchemeColor = Color3.fromRGB(40,255,255),
-    Background = Color3.fromRGB(100, 0, 0),
-    Header = Color3.fromRGB(150, 0, 0),
-    TextColor = Color3.fromRGB(255,255,255),
-    ElementColor = Color3.fromRGB(26, 20, 20)
-}
+local Window = Library.CreateLib("Vellexia's Charmed Script", "DarkTheme")
 local Tab = Window:NewTab("Main Menu")
 local Section = Tab:NewSection("This is a Tester Script.")
 local Section = Tab:NewSection("If this script get's patched, a new one will be made")

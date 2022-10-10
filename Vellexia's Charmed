@@ -1,8 +1,8 @@
 local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
 local Window = Library.CreateLib("Klair", colors)
 local colors = {
-    SchemeColor = Color3.fromRGB(0,255,255),
-    Background = Color3.fromRGB(0, 0, 0),
+    SchemeColor = Color3.fromRGB(255,105,180),
+    Background = Color3.fromRGB(255,105,180),
     Header = Color3.fromRGB(0, 0, 0),
     TextColor = Color3.fromRGB(255,255,255),
     ElementColor = Color3.fromRGB(20, 20, 20)
@@ -18,7 +18,7 @@ Section:NewButton("Unlock All Gamepass Characters", "Use All Characters", functi
 
 end)
 local Tab = Window:NewTab("Teleports")
-local Section = Tab:NewSection("WhiteLighter")
+local Section = Tab:NewSection("Whitelighter")
 Section:NewButton("Manor", "Teleport to Manor", function()
     print("Clicked")
     local args = {

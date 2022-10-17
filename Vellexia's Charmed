@@ -8,15 +8,19 @@ local colors = {
 }
 local Window = Library.CreateLib("Vellexia's Charmed", colors)
 local Tab = Window:NewTab("Main Menu")
-local Section = Tab:NewSection("This is a Tester Script.")
-local Section = Tab:NewSection("If this script get's patched, a new one will be made")
-local Section = Tab:NewSection("Credits: Klair")
 local Section = Tab:NewSection("Characters")
 Section:NewButton("Unlock All Gamepass Characters", "Use All Characters", function()
     print("Clicked")
     game.Players.LocalPlayer.UserId = "150210309"
 
 end)
+local Section = Tab:NewSection("Player Enhancement")
+Section:NewSlider("Walk Speed", "Speed Slider 0-500", 500, 0, function(s) -- 500 (MaxValue) | 0 (MinValue)
+    game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = s
+end)
+local Section = Tab:NewSection("This is a Tester Script.")
+local Section = Tab:NewSection("If this script get's patched, a new one will be made")
+local Section = Tab:NewSection("Credits: Klair")
 local Tab = Window:NewTab("Teleports")
 local Section = Tab:NewSection("Whitelighter")
 Section:NewButton("Manor", "Teleport to Manor", function()

@@ -314,7 +314,7 @@ Section:NewTextBox("Telekinesis User", "Lift Any User Who's Name Is Typed In", f
         
         local args = {
     [1] = "telekinesis",
-    [2] = game:GetService("Players").LocalPlayer.Character.HumanoidRootPart,
+    [2] = game:GetService("Players").LocalPlayer.Character.Head,
     [3] = child.Character
 }
 

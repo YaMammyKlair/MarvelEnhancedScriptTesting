@@ -228,6 +228,37 @@ game:GetService("ReplicatedStorage").Witches.GoodWitches.Prue.PowerEvents.PrueEv
 
 
 end)
+Section:NewTextBox("Heal User", "Heal Any User Who's Name Is Typed In", function(txt)
+        print(Success)
+        
+        local username = string.lower(txt)
+        local foundChild = false
+        local Child
+        for i,v in pairs(game.Players:GetChildren()) do
+            if string.lower(v.Name) == username then
+            foundChild = true
+            child = v
+        end
+    end
+    
+    
+        
+    if foundChild == true then
+        
+        local args = {
+    [1] = "heal",
+    [2] = game:GetService("Players").LocalPlayer.Character.HumanoidRootPart,
+    [3] = child.Character
+}
+
+game:GetService("ReplicatedStorage").Witches.GoodWitches.Wyatt.PowerEvents.WyattEvents:FireServer(unpack(args))
+
+
+        end
+    
+
+
+end)
 
 Section:NewButton("Self Heal", "You will need to teleport back to someone", function()
     print("Clicked")
@@ -260,6 +291,144 @@ Section:NewButton("Patience Weave", "Makes Patience Hair Grow", function()
 
 game:GetService("ReplicatedStorage").Witches.GoodWitches.Patience.PowerEvents.SpellEvents:FireServer(unpack(args))
 
+
+
+end)
+
+Section:NewTextBox("Heal User", "Heal Any User Who's Name Is Typed In", function(txt)
+        print(Success)
+        
+        local username = string.lower(txt)
+        local foundChild = false
+        local Child
+        for i,v in pairs(game.Players:GetChildren()) do
+            if string.lower(v.Name) == username then
+            foundChild = true
+            child = v
+        end
+    end
+    
+    
+        
+    if foundChild == true then
+        
+        local args = {
+    [1] = "telekinesis",
+    [2] = game:GetService("Players").LocalPlayer.Character.HumanoidRootPart,
+    [3] = child.Character
+}
+
+game:GetService("ReplicatedStorage").Witches.GoodWitches.Prue.PowerEvents.PrueEvents:FireServer(unpack(args))
+
+wait(0.1)
+local args = {
+    [1] = "throw",
+    [2] = Vector3.new(673.7763061523438, 11.30279541015625, -283.99041748046875)
+}
+
+game:GetService("ReplicatedStorage").Witches.GoodWitches.Prue.PowerEvents.PrueEvents:FireServer(unpack(args))
+
+local args = {
+    [1] = "throw",
+    [2] = Vector3.new(673.7763061523438, 11.30279541015625, -283.99041748046875)
+}
+
+game:GetService("ReplicatedStorage").Witches.GoodWitches.Prue.PowerEvents.PrueEvents:FireServer(unpack(args))
+
+local args = {
+    [1] = "throw",
+    [2] = Vector3.new(673.7763061523438, 11.30279541015625, -283.99041748046875)
+}
+
+game:GetService("ReplicatedStorage").Witches.GoodWitches.Prue.PowerEvents.PrueEvents:FireServer(unpack(args))
+
+local args = {
+    [1] = "throw",
+    [2] = Vector3.new(673.7763061523438, 11.30279541015625, -283.99041748046875)
+}
+
+game:GetService("ReplicatedStorage").Witches.GoodWitches.Prue.PowerEvents.PrueEvents:FireServer(unpack(args))
+
+local args = {
+    [1] = "throw",
+    [2] = Vector3.new(673.7763061523438, 11.30279541015625, -283.99041748046875)
+}
+
+game:GetService("ReplicatedStorage").Witches.GoodWitches.Prue.PowerEvents.PrueEvents:FireServer(unpack(args))
+
+local args = {
+    [1] = "throw",
+    [2] = Vector3.new(673.7763061523438, 11.30279541015625, -283.99041748046875)
+}
+
+game:GetService("ReplicatedStorage").Witches.GoodWitches.Prue.PowerEvents.PrueEvents:FireServer(unpack(args))
+
+local args = {
+    [1] = "throw",
+    [2] = Vector3.new(673.7763061523438, 11.30279541015625, -283.99041748046875)
+}
+
+game:GetService("ReplicatedStorage").Witches.GoodWitches.Prue.PowerEvents.PrueEvents:FireServer(unpack(args))
+
+local args = {
+    [1] = "throw",
+    [2] = Vector3.new(673.7763061523438, 11.30279541015625, -283.99041748046875)
+}
+
+game:GetService("ReplicatedStorage").Witches.GoodWitches.Prue.PowerEvents.PrueEvents:FireServer(unpack(args))
+
+local args = {
+    [1] = "throw",
+    [2] = Vector3.new(673.7763061523438, 11.30279541015625, -283.99041748046875)
+}
+
+game:GetService("ReplicatedStorage").Witches.GoodWitches.Prue.PowerEvents.PrueEvents:FireServer(unpack(args))
+
+local args = {
+    [1] = "throw",
+    [2] = Vector3.new(673.7763061523438, 11.30279541015625, -283.99041748046875)
+}
+
+game:GetService("ReplicatedStorage").Witches.GoodWitches.Prue.PowerEvents.PrueEvents:FireServer(unpack(args))
+
+local args = {
+    [1] = "throw",
+    [2] = Vector3.new(673.7763061523438, 11.30279541015625, -283.99041748046875)
+}
+
+game:GetService("ReplicatedStorage").Witches.GoodWitches.Prue.PowerEvents.PrueEvents:FireServer(unpack(args))
+
+local args = {
+    [1] = "throw",
+    [2] = Vector3.new(673.7763061523438, 11.30279541015625, -283.99041748046875)
+}
+
+game:GetService("ReplicatedStorage").Witches.GoodWitches.Prue.PowerEvents.PrueEvents:FireServer(unpack(args))
+
+local args = {
+    [1] = "throw",
+    [2] = Vector3.new(673.7763061523438, 11.30279541015625, -283.99041748046875)
+}
+
+game:GetService("ReplicatedStorage").Witches.GoodWitches.Prue.PowerEvents.PrueEvents:FireServer(unpack(args))
+
+local args = {
+    [1] = "throw",
+    [2] = Vector3.new(673.7763061523438, 11.30279541015625, -283.99041748046875)
+}
+
+game:GetService("ReplicatedStorage").Witches.GoodWitches.Prue.PowerEvents.PrueEvents:FireServer(unpack(args))
+
+local args = {
+    [1] = "throw",
+    [2] = Vector3.new(673.7763061523438, 11.30279541015625, -283.99041748046875)
+}
+
+game:GetService("ReplicatedStorage").Witches.GoodWitches.Prue.PowerEvents.PrueEvents:FireServer(unpack(args))
+
+
+        end
+    
 
 
 end)

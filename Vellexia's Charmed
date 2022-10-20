@@ -295,7 +295,7 @@ game:GetService("ReplicatedStorage").Witches.GoodWitches.Patience.PowerEvents.Sp
 
 end)
 
-Section:NewTextBox("Heal User", "Heal Any User Who's Name Is Typed In", function(txt)
+Section:NewTextBox("Telekinesis User", "Lift Any User Who's Name Is Typed In", function(txt)
         print(Success)
         
         local username = string.lower(txt)

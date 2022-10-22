@@ -1,0 +1,1125 @@
+local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
+local colors = {
+    SchemeColor = Color3.fromRGB(255,105,180),
+    Background = Color3.fromRGB(255,192,203),
+    Header = Color3.fromRGB(255,105,180),
+    TextColor = Color3.fromRGB(255,255,255),
+    ElementColor = Color3.fromRGB(255,192,203)
+}
+local Window = Library.CreateLib("Charmed Script", colors)
+local Tab = Window:NewTab("Main Menu")
+local Section = Tab:NewSection("Gamepasses")
+Section:NewButton("Unlock All Gamepass Characters", "Unlocks All Characters", function()
+        print("Clicked")
+    game.Players.LocalPlayer.UserId = "367045117"
+end)
+
+local Section = Tab:NewSection("Credits: Klair")
+local Section = Tab:NewSection("If this script get's patched, a new one will be made")
+local Tab = Window:NewTab("Teleports")
+local Section = Tab:NewSection("Whitelighter")
+Section:NewButton("Manor", "Teleports you to the Manor", function()
+        print("Clicked")
+   local args = {
+    [1] = "Orbing",
+    [3] = true,
+    [4] = "Manor"
+}
+
+game:GetService("ReplicatedStorage").AbilityRemote:FireServer(unpack(args))
+
+end)
+
+Section:NewButton("Manor Attic", "Teleports you to the Manor Attic", function()
+        print("Clicked")
+     local args = {
+    [1] = "Orbing",
+    [3] = true,
+    [4] = "Manor Attic"
+}
+
+game:GetService("ReplicatedStorage").AbilityRemote:FireServer(unpack(args))
+
+end)
+
+Section:NewButton("Underworld", "Teleports you to the Underworld", function()
+        print("Clicked")
+    local args = {
+    [1] = "Orbing",
+    [3] = true,
+    [4] = "Underworld"
+}
+
+game:GetService("ReplicatedStorage").AbilityRemote:FireServer(unpack(args))
+
+
+end)
+
+Section:NewButton("Witch Shop", "Teleports you to the Witch Shop ", function()
+        print("Clicked")
+    local args = {
+    [1] = "Orbing",
+    [3] = true,
+    [4] = "Witch Shop"
+}
+
+game:GetService("ReplicatedStorage").AbilityRemote:FireServer(unpack(args))
+
+
+
+end)
+
+Section:NewButton("Police Station", "Teleports you to the Police Station", function()
+        print("Clicked")
+    local args = {
+    [1] = "Orbing",
+    [3] = true,
+    [4] = "Police Station"
+}
+
+game:GetService("ReplicatedStorage").AbilityRemote:FireServer(unpack(args))
+
+
+
+
+end)
+
+Section:NewButton("Basement", "Teleports you to the Manor Basement", function()
+        print("Clicked")
+    local args = {
+    [1] = "Orbing",
+    [3] = true,
+    [4] = "Basement"
+}
+
+game:GetService("ReplicatedStorage").AbilityRemote:FireServer(unpack(args))
+
+
+
+
+
+end)
+
+Section:NewButton("Magic School", "Teleports you to the Magic School", function()
+        print("Clicked")
+    local args = {
+    [1] = "Orbing",
+    [3] = true,
+    [4] = "Magic School"
+}
+
+game:GetService("ReplicatedStorage").AbilityRemote:FireServer(unpack(args))
+
+
+
+
+
+
+end)
+
+Section:NewButton("Herb Shop", "Teleports you to the Herb Shop", function()
+        print("Clicked")
+   local args = {
+    [1] = "Orbing",
+    [3] = true,
+    [4] = "Herb Shop"
+}
+
+game:GetService("ReplicatedStorage").AbilityRemote:FireServer(unpack(args))
+
+
+
+
+
+
+
+end)
+
+
+Section:NewButton("Golden Bridge", "Teleports you to the Golden Bridge", function()
+        print("Clicked")
+    local args = {
+    [1] = "Orbing",
+    [3] = true,
+    [4] = "Golden Bridge"
+}
+
+game:GetService("ReplicatedStorage").AbilityRemote:FireServer(unpack(args))
+
+
+
+
+
+
+
+
+end)
+
+
+Section:NewButton("Heavens", "Teleports you to the Heavens", function()
+        print("Clicked")
+    local args = {
+    [1] = "Orbing",
+    [3] = true,
+    [4] = "Heavens"
+}
+
+game:GetService("ReplicatedStorage").AbilityRemote:FireServer(unpack(args))
+
+
+
+
+
+
+
+
+
+end)
+
+Section:NewButton("Bay Mirror", "Teleports you to the Bay Mirror", function()
+        print("Clicked")
+    local args = {
+    [1] = "Orbing",
+    [3] = true,
+    [4] = "Bay Mirror"
+}
+
+game:GetService("ReplicatedStorage").AbilityRemote:FireServer(unpack(args))
+
+
+
+
+
+
+
+
+
+
+
+end)
+
+Section:NewButton("Downtown", "Teleports you Downtown", function()
+        print("Clicked")
+   local args = {
+    [1] = "Orbing",
+    [3] = true,
+    [4] = "DownTown"
+}
+
+game:GetService("ReplicatedStorage").AbilityRemote:FireServer(unpack(args))
+
+
+
+
+
+
+
+
+
+
+
+
+end)
+
+Section:NewButton("Graveyard", "Teleports you to the Graveyard", function()
+        print("Clicked")
+    local args = {
+    [1] = "Orbing",
+    [3] = true,
+    [4] = "Grave Yard"
+}
+
+game:GetService("ReplicatedStorage").AbilityRemote:FireServer(unpack(args))
+
+
+
+
+
+
+
+
+
+
+
+
+
+end)
+
+Section:NewButton("P3", "Teleports you to P3", function()
+        print("Clicked")
+    local args = {
+    [1] = "Orbing",
+    [3] = true,
+    [4] = "P3"
+}
+
+game:GetService("ReplicatedStorage").AbilityRemote:FireServer(unpack(args))
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+end)
+
+Section:NewButton("Halliwells", "Teleports you to The Halliwells", function()
+        print("Clicked")
+    local args = {
+    [1] = "Orbing",
+    [3] = true,
+    [4] = "Halliwells"
+}
+
+game:GetService("ReplicatedStorage").AbilityRemote:FireServer(unpack(args))
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+end)
+
+Section:NewButton("Chinatown", "Teleports you to Chinatown", function()
+        print("Clicked")
+    local args = {
+    [1] = "Orbing",
+    [3] = true,
+    [4] = "China Town"
+}
+
+game:GetService("ReplicatedStorage").AbilityRemote:FireServer(unpack(args))
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+end)
+
+local Tab = Window:NewTab("Misc")
+local Section = Tab:NewSection("Glamour")
+Section:NewButton("Leo", "Makes you look like Leo ", function()
+        print("Clicked")
+    local args = {
+    [1] = "Glamouring",
+    [2] = "Leo"
+}
+
+game:GetService("ReplicatedStorage").AbilityRemote:FireServer(unpack(args))
+
+end)
+
+Section:NewButton("Piper", "Makes you look like Piper ", function()
+        print("Clicked")
+    local args = {
+    [1] = "Glamouring",
+    [2] = "Piper"
+}
+
+game:GetService("ReplicatedStorage").AbilityRemote:FireServer(unpack(args))
+
+end)
+
+Section:NewButton("Phoebe", "Makes you look like Phoebe ", function()
+    local args = {
+    [1] = "Glamouring",
+    [2] = "Phoebe"
+}
+
+game:GetService("ReplicatedStorage").AbilityRemote:FireServer(unpack(args))
+
+end)
+
+
+Section:NewButton("Prue", "Makes you look like Prue ", function()
+        print("Clicked")
+    local args = {
+    [1] = "Glamouring",
+    [2] = "Prue"
+}
+
+game:GetService("ReplicatedStorage").AbilityRemote:FireServer(unpack(args))
+
+end)
+
+Section:NewButton("Paige", "Makes you look like Paige ", function()
+        print("Clicked")
+    local args = {
+    [1] = "Glamouring",
+    [2] = "Paige"
+}
+
+game:GetService("ReplicatedStorage").AbilityRemote:FireServer(unpack(args))
+
+end)
+
+Section:NewButton("Wyatt", "Makes you look like Wyatt", function()
+        print("Clicked")
+    local args = {
+    [1] = "Glamouring",
+    [2] = "Wyatt"
+}
+
+game:GetService("ReplicatedStorage").AbilityRemote:FireServer(unpack(args))
+
+end)
+
+Section:NewButton("Chris", "Makes you look like Chris", function()
+        print("Clicked")
+    local args = {
+    [1] = "Glamouring",
+    [2] = "Chris"
+}
+
+game:GetService("ReplicatedStorage").AbilityRemote:FireServer(unpack(args))
+
+end)
+
+Section:NewButton("Billie", "Makes you look like Billie", function()
+        print("Clicked")
+    local args = {
+    [1] = "Glamouring",
+    [2] = "Billie"
+}
+
+game:GetService("ReplicatedStorage").AbilityRemote:FireServer(unpack(args))
+
+end)
+
+Section:NewButton("Christy", "Makes you look like Christy", function()
+        print("Clicked")
+    local args = {
+    [1] = "Glamouring",
+    [2] = "Christy"
+}
+
+game:GetService("ReplicatedStorage").AbilityRemote:FireServer(unpack(args))
+
+end)
+
+Section:NewButton("Max", "Makes you look like Max", function()
+        print("Clicked")
+    local args = {
+    [1] = "Glamouring",
+    [2] = "Max"
+}
+
+game:GetService("ReplicatedStorage").AbilityRemote:FireServer(unpack(args))
+
+end)
+
+Section:NewButton("Zachary", "Makes you look like Zachary", function()
+        print("Clicked")
+    local args = {
+    [1] = "Glamouring",
+    [2] = "Zachary"
+}
+
+game:GetService("ReplicatedStorage").AbilityRemote:FireServer(unpack(args))
+
+end)
+
+Section:NewButton("Matthew", "Makes you look like Matthew", function()
+        print("Clicked")
+    local args = {
+    [1] = "Glamouring",
+    [2] = "Matthew"
+}
+
+game:GetService("ReplicatedStorage").AbilityRemote:FireServer(unpack(args))
+
+end)
+
+Section:NewButton("Eames", "Makes you look like Eames", function()
+        print("Clicked")
+    local args = {
+    [1] = "Glamouring",
+    [2] = "Eames"
+}
+
+game:GetService("ReplicatedStorage").AbilityRemote:FireServer(unpack(args))
+
+end)
+
+Section:NewButton("Jeremy", "Makes you look like Jeremy", function()
+        print("Clicked")
+    local args = {
+    [1] = "Glamouring",
+    [2] = "Jeremy"
+}
+
+game:GetService("ReplicatedStorage").AbilityRemote:FireServer(unpack(args))
+
+end)
+
+Section:NewButton("Source", "Makes you look like the Source ", function()
+        print("Clicked")
+    local args = {
+    [1] = "Glamouring",
+    [2] = "Source"
+}
+
+game:GetService("ReplicatedStorage").AbilityRemote:FireServer(unpack(args))
+
+end)
+
+Section:NewButton("Seer", "Makes you look like the Seer", function()
+        print("Clicked")
+    local args = {
+    [1] = "Glamouring",
+    [2] = "Seer"
+}
+
+game:GetService("ReplicatedStorage").AbilityRemote:FireServer(unpack(args))
+
+end)
+
+Section:NewButton("Cole", "Makes you look like Cole", function()
+        print("Clicked")
+    local args = {
+    [1] = "Glamouring",
+    [2] = "Cole"
+}
+
+game:GetService("ReplicatedStorage").AbilityRemote:FireServer(unpack(args))
+
+end)
+
+Section:NewButton("Belthazor", "Makes you look like Belthazor", function()
+        print("Clicked")
+local args = {
+    [1] = "DemonicForm"
+}
+
+game:GetService("ReplicatedStorage").AbilityRemote:FireServer(unpack(args))
+
+
+end)
+
+Section:NewButton("Zankou", "Makes you look like Zankou", function()
+        print("Clicked")
+    local args = {
+    [1] = "Glamouring",
+    [2] = "Zankou"
+}
+
+game:GetService("ReplicatedStorage").AbilityRemote:FireServer(unpack(args))
+
+end)
+
+Section:NewButton("Asmodeus", "Makes you look like Asmodeus", function()
+        print("Clicked")
+    local args = {
+    [1] = "Glamouring",
+    [2] = "Asmodeus"
+}
+
+game:GetService("ReplicatedStorage").AbilityRemote:FireServer(unpack(args))
+
+end)
+
+Section:NewButton("Candor", "Makes you look like Candor", function()
+        print("Clicked")
+    local args = {
+    [1] = "Glamouring",
+    [2] = "Candor"
+}
+
+game:GetService("ReplicatedStorage").AbilityRemote:FireServer(unpack(args))
+
+end)
+
+Section:NewButton("Wendigo", "Makes you look like Wendigo", function()
+        print("Clicked")
+    local args = {
+    [1] = "Glamouring",
+    [2] = "Wendigo"
+}
+
+game:GetService("ReplicatedStorage").AbilityRemote:FireServer(unpack(args))
+
+end)
+
+Section:NewButton("Baliel", "Makes you look like Baliel", function()
+        print("Clicked")
+    local args = {
+    [1] = "Glamouring",
+    [2] = "Baliel"
+}
+
+game:GetService("ReplicatedStorage").AbilityRemote:FireServer(unpack(args))
+
+end)
+
+Section:NewButton("Harpy", "Makes you look like Harpy", function()
+        print("Clicked")
+    local args = {
+    [1] = "Glamouring",
+    [2] = "Harpy"
+}
+
+game:GetService("ReplicatedStorage").AbilityRemote:FireServer(unpack(args))
+
+end)
+
+Section:NewButton("Abraxas", "Makes you look like Abraxas", function()
+        print("Clicked")
+    local args = {
+    [1] = "Glamouring",
+    [2] = "Abraxas"
+}
+
+game:GetService("ReplicatedStorage").AbilityRemote:FireServer(unpack(args))
+
+end)
+
+Section:NewButton("Alec", "Makes you look like Alec", function()
+        print("Clicked")
+    local args = {
+    [1] = "Glamouring",
+    [2] = "Alec"
+}
+
+game:GetService("ReplicatedStorage").AbilityRemote:FireServer(unpack(args))
+
+end)
+
+Section:NewButton("Darryl", "Makes you look like Darryl", function()
+        print("Clicked")
+    local args = {
+    [1] = "Glamouring",
+    [2] = "Darryl"
+}
+
+game:GetService("ReplicatedStorage").AbilityRemote:FireServer(unpack(args))
+
+end)
+
+Section:NewButton("Andy", "Makes you look like Andy", function()
+        print("Clicked")
+    local args = {
+    [1] = "Glamouring",
+    [2] = "Andy"
+}
+
+game:GetService("ReplicatedStorage").AbilityRemote:FireServer(unpack(args))
+
+end)
+local Section = Tab:NewSection("Remote Teleports")
+Section:NewButton("Prue", "Orbs Prue To Your Location", function()
+        print("Clicked")
+    local args = {
+    [1] = "Remote Orbing",
+    [2] = CFrame.new(Vector3.new(-1893.4873046875, 69.258056640625, 712.3700561523438), Vector3.new(-0.9548237323760986, 0.02686280943453312, -0.2959562838077545)),
+    [3] = true,
+    [5] = "Summoning",
+    [6] = "Prue"
+}
+
+game:GetService("ReplicatedStorage").AbilityRemote:FireServer(unpack(args))
+
+
+
+end)
+Section:NewButton("Piper", "Orbs Piper To Your Location", function()
+        print("Clicked")
+    local args = {
+    [1] = "Remote Orbing",
+    [2] = CFrame.new(Vector3.new(-1893.4873046875, 69.258056640625, 712.3700561523438), Vector3.new(-0.9548237323760986, 0.02686280943453312, -0.2959562838077545)),
+    [3] = true,
+    [5] = "Summoning",
+    [6] = "Piper"
+}
+
+game:GetService("ReplicatedStorage").AbilityRemote:FireServer(unpack(args))
+
+
+
+end)
+
+Section:NewButton("Phoebe", "Orbs Phoebe To Your Location", function()
+        print("Clicked")
+    local args = {
+    [1] = "Remote Orbing",
+    [2] = CFrame.new(Vector3.new(-1893.4873046875, 69.258056640625, 712.3700561523438), Vector3.new(-0.9548237323760986, 0.02686280943453312, -0.2959562838077545)),
+    [3] = true,
+    [5] = "Summoning",
+    [6] = "Phoebe"
+}
+
+game:GetService("ReplicatedStorage").AbilityRemote:FireServer(unpack(args))
+
+
+
+end)
+
+Section:NewButton("Paige", "Orbs Paige To Your Location", function()
+        print("Clicked")
+    local args = {
+    [1] = "Remote Orbing",
+    [2] = CFrame.new(Vector3.new(-1893.4873046875, 69.258056640625, 712.3700561523438), Vector3.new(-0.9548237323760986, 0.02686280943453312, -0.2959562838077545)),
+    [3] = true,
+    [5] = "Summoning",
+    [6] = "Paige"
+}
+
+game:GetService("ReplicatedStorage").AbilityRemote:FireServer(unpack(args))
+
+
+
+end)
+
+Section:NewButton("Wyatt", "Orbs Wyatt To Your Location", function()
+        print("Clicked")
+    local args = {
+    [1] = "Remote Orbing",
+    [2] = CFrame.new(Vector3.new(-1893.4873046875, 69.258056640625, 712.3700561523438), Vector3.new(-0.9548237323760986, 0.02686280943453312, -0.2959562838077545)),
+    [3] = true,
+    [5] = "Summoning",
+    [6] = "Wyatt"
+}
+
+game:GetService("ReplicatedStorage").AbilityRemote:FireServer(unpack(args))
+
+
+
+end)
+
+Section:NewButton("Chris", "Orbs Chris To Your Location", function()
+        print("Clicked")
+    local args = {
+    [1] = "Remote Orbing",
+    [2] = CFrame.new(Vector3.new(-1893.4873046875, 69.258056640625, 712.3700561523438), Vector3.new(-0.9548237323760986, 0.02686280943453312, -0.2959562838077545)),
+    [3] = true,
+    [5] = "Summoning",
+    [6] = "Chris"
+}
+
+game:GetService("ReplicatedStorage").AbilityRemote:FireServer(unpack(args))
+
+
+
+end)
+
+Section:NewButton("Billie", "Orbs Billie To Your Location", function()
+        print("Clicked")
+    local args = {
+    [1] = "Remote Orbing",
+    [2] = CFrame.new(Vector3.new(-1893.4873046875, 69.258056640625, 712.3700561523438), Vector3.new(-0.9548237323760986, 0.02686280943453312, -0.2959562838077545)),
+    [3] = true,
+    [5] = "Summoning",
+    [6] = "Billie"
+}
+
+game:GetService("ReplicatedStorage").AbilityRemote:FireServer(unpack(args))
+
+
+
+end)
+
+Section:NewButton("Christy", "Orbs Christy To Your Location", function()
+        print("Clicked")
+    local args = {
+    [1] = "Remote Orbing",
+    [2] = CFrame.new(Vector3.new(-1893.4873046875, 69.258056640625, 712.3700561523438), Vector3.new(-0.9548237323760986, 0.02686280943453312, -0.2959562838077545)),
+    [3] = true,
+    [5] = "Summoning",
+    [6] = "Christy"
+}
+
+game:GetService("ReplicatedStorage").AbilityRemote:FireServer(unpack(args))
+
+
+
+end)
+
+Section:NewButton("Max", "Orbs Max To Your Location", function()
+        print("Clicked")
+    local args = {
+    [1] = "Remote Orbing",
+    [2] = CFrame.new(Vector3.new(-1893.4873046875, 69.258056640625, 712.3700561523438), Vector3.new(-0.9548237323760986, 0.02686280943453312, -0.2959562838077545)),
+    [3] = true,
+    [5] = "Summoning",
+    [6] = "Max"
+}
+
+game:GetService("ReplicatedStorage").AbilityRemote:FireServer(unpack(args))
+
+
+
+end)
+
+Section:NewButton("Source", "Orbs Source  To Your Location", function()
+        print("Clicked")
+    local args = {
+    [1] = "Remote Orbing",
+    [2] = CFrame.new(Vector3.new(-1893.4873046875, 69.258056640625, 712.3700561523438), Vector3.new(-0.9548237323760986, 0.02686280943453312, -0.2959562838077545)),
+    [3] = true,
+    [5] = "Summoning",
+    [6] = "Source"
+}
+
+game:GetService("ReplicatedStorage").AbilityRemote:FireServer(unpack(args))
+
+
+
+end)
+
+local Tab = Window:NewTab("Combat")
+local Section = Tab:NewSection("Keybinds")
+Section:NewKeybind("Crystal Trap", "Puts Crystals In Correct Spot", Enum.KeyCode.E, function()
+	print("You just clicked the bind")
+    local args = {
+    [1] = "TelekineticOrbingCrystals"
+}
+
+game:GetService("ReplicatedStorage").AbilityRemote:FireServer(unpack(args))
+
+
+
+end)
+
+Section:NewKeybind("Self Healing", "Makes you heal yourself", Enum.KeyCode.X, function()
+	print("You just clicked the bind")
+    local args = {
+    [1] = "Healing",
+    [2] = game:GetService("Players").LocalPlayer.Character.HumanoidRootPart,
+    [3] = "Start"
+}
+
+game:GetService("ReplicatedStorage").AbilityRemote:FireServer(unpack(args))
+
+
+end)
+
+Section:NewTextBox("Heal User", "Heal Any User Who's Name Is Typed In", function(txt)
+        print(Success)
+        
+        local username = string.lower(txt)
+        local foundChild = false
+        local Child
+        for i,v in pairs(game.Players:GetChildren()) do
+            if string.lower(v.Name) == username then
+            foundChild = true
+            child = v
+        end
+    end
+    
+    
+        
+    if foundChild == true then
+        
+        local args = {
+    [1] = "Healing",
+    [2] = game:GetService("Players").LocalPlayer.Character.HumanoidRootPart,
+    [3] = "Start",
+    [4] = child.Character
+}
+
+game:GetService("ReplicatedStorage").AbilityRemote:FireServer(unpack(args))
+
+
+        end
+    
+
+
+end)
+
+Section:NewKeybind("Self Heal Deactivate", "Makes Your Stop Healing Yourself", Enum.KeyCode.Z, function()
+	print("You just clicked the bind")
+    local args = {
+    [1] = "Healing",
+    [2] = game:GetService("Players").LocalPlayer.Character.HumanoidRootPart,
+    [3] = "Stop"
+}
+
+game:GetService("ReplicatedStorage").AbilityRemote:FireServer(unpack(args))
+
+
+end)
+
+Section:NewKeybind("Energy Wave", "Blasts Wyatts Energy Wave", Enum.KeyCode.F, function()
+	print("You just clicked the bind")
+    local args = {
+    [1] = "Energy Waves"
+}
+
+game:GetService("ReplicatedStorage").AbilityRemote:FireServer(unpack(args))
+
+
+
+end)
+
+Section:NewKeybind("Advance Telekinesis", "Area Advance Telekinesis", Enum.KeyCode.C, function()
+	print("You just clicked the bind")
+    local args = {
+    [1] = "Advance Telekinesis"
+}
+
+game:GetService("ReplicatedStorage").AbilityRemote:FireServer(unpack(args))
+
+
+
+
+end)
+
+Section:NewKeybind("Area Telekinesis", "Area Telekinesis", Enum.KeyCode.B, function()
+	print("You just clicked the bind")
+local args = {
+    [1] = "Telekinetic Area Push"
+}
+
+game:GetService("ReplicatedStorage").AbilityRemote:FireServer(unpack(args))
+
+
+
+
+
+end)
+
+Section:NewKeybind("Area Freeze", "Freeze's Everyone Around You", Enum.KeyCode.T, function()
+	print("You just clicked the bind")
+local args = {
+    [1] = "AreaFreeze"
+}
+
+game:GetService("ReplicatedStorage").AbilityRemote:FireServer(unpack(args))
+
+
+
+
+
+
+end)
+
+Section:NewKeybind("Advance Area Freeze", "Advance Freeze's Everyone Around You", Enum.KeyCode.R, function()
+	print("You just clicked the bind")
+local args = {
+    [1] = "AdvFreeze"
+}
+
+game:GetService("ReplicatedStorage").AbilityRemote:FireServer(unpack(args))
+
+
+
+
+
+
+
+end)
+
+Section:NewKeybind("Molecular Combustion", "Explodes Target", Enum.KeyCode.G, function()
+	print("You just clicked the bind")
+local args = {
+    [1] = "Molecular Combustion"
+}
+
+game:GetService("ReplicatedStorage").AbilityRemote:FireServer(unpack(args))
+
+
+
+
+
+
+
+
+end)
+
+Section:NewKeybind("Fireball", "Fireball Projectile", Enum.KeyCode.V, function()
+	print("You just clicked the bind")
+local args = {
+    [1] = "FireBallHold"
+}
+
+game:GetService("ReplicatedStorage").AbilityRemote:FireServer(unpack(args))
+wait (0.5)
+local args = {
+    [1] = "FireBallThrow"
+}
+
+game:GetService("ReplicatedStorage").AbilityRemote:FireServer(unpack(args))
+
+
+
+
+
+
+
+end)
+
+Section:NewKeybind("Energy Blast", "Energy Blast Projectile", Enum.KeyCode.N, function()
+	print("You just clicked the bind")
+local args = {
+    [1] = "EnergyBlastHold"
+}
+
+game:GetService("ReplicatedStorage").AbilityRemote:FireServer(unpack(args))
+
+wait (0.5)
+local args = {
+    [1] = "EnergyBlastThrow"
+}
+
+game:GetService("ReplicatedStorage").AbilityRemote:FireServer(unpack(args))
+
+
+
+
+
+
+
+
+end)
+
+Section:NewKeybind("Energy Ball", "Energy Ball Projectile", Enum.KeyCode.K, function()
+	print("You just clicked the bind")
+local args = {
+    [1] = "EnergyBallHold"
+}
+
+game:GetService("ReplicatedStorage").AbilityRemote:FireServer(unpack(args))
+
+
+wait (0.5)
+local args = {
+    [1] = "EnergyBallThrow"
+}
+
+game:GetService("ReplicatedStorage").AbilityRemote:FireServer(unpack(args))
+
+
+
+
+
+
+
+
+
+end)
+
+Section:NewKeybind("Eye Fire Bolts", "Optic Fire Bolt Projectile", Enum.KeyCode.J, function()
+	print("You just clicked the bind")
+local args = {
+    [1] = "OpticHold"
+}
+
+game:GetService("ReplicatedStorage").AbilityRemote:FireServer(unpack(args))
+
+
+
+wait (0.5)
+local args = {
+    [1] = "OpticThrow"
+}
+
+game:GetService("ReplicatedStorage").AbilityRemote:FireServer(unpack(args))
+
+
+
+
+
+
+
+
+
+
+end)
+
+local Section = Tab:NewSection("Buttons")
+Section:NewButton("Invisibility", "Makes User Invisible", function()
+        print("Clicked")
+local args = {
+    [1] = "Invisibility",
+    [2] = "Stable"
+}
+
+game:GetService("ReplicatedStorage").AbilityRemote:FireServer(unpack(args))
+
+
+
+
+end)
+
+Section:NewButton("Invisibility Deactivate", "Makes The Users Invisibility Turn Off", function()
+        print("Clicked")
+local args = {
+    [1] = "Invisibility",
+    [2] = "UnStable"
+}
+
+game:GetService("ReplicatedStorage").AbilityRemote:FireServer(unpack(args))
+
+
+
+
+
+end)
+
+Section:NewButton("Hyper Speed", "Ability To Move Super Fast", function()
+        print("Clicked")
+local args = {
+    [1] = "HyperSpeed",
+    [2] = "Start"
+}
+
+game:GetService("ReplicatedStorage").AbilityRemote:FireServer(unpack(args))
+
+
+
+
+
+
+end)
+
+Section:NewButton("Hyper Speed Deactivate", "Turns Super Speed Off", function()
+        print("Clicked")
+local args = {
+    [1] = "HyperSpeed",
+    [2] = "Cancel"
+}
+
+game:GetService("ReplicatedStorage").AbilityRemote:FireServer(unpack(args))
+
+
+
+
+
+
+
+end)
+
+
+
+
+

@@ -432,7 +432,13 @@ game:GetService("ReplicatedStorage").Witches.GoodWitches.Prue.PowerEvents.PrueEv
 
 
 end)
+local Tab = Window:NewTab("Misc")
+local Section = Tab:NewSection("Admins")
+Section:NewButton("Infinite Yield", "Activates Infinite Yield Admin", function()
+    print("Clicked")
+    loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))()
 
+end)
 
 
 
